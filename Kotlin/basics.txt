@@ -1,0 +1,15 @@
+**Functions**
+    -return type 'Unit' in place of 'void'(which we use in C or C++)
+    -Optional to specify 'Unit'
+    - Unlike in some languages, such as Java, where a function can change the value passed into a parameter,
+      parameters in Kotlin are immutable. You cannot reassign the value of a parameter from within the function body.
+
+**Named Arguments**
+    Ex: println(birthdayGreeting(name = "Rex", age = 2))
+
+**Default Arguments**
+    Ex: fun birthdayGreeting(name: String = "Rover", age: Int): String {
+            return "Happy Birthday, $name! You are now $age years old!"
+        }
+        println(birthdayGreeting(age = 5))
+        println(birthdayGreeting("Rex", 2))
