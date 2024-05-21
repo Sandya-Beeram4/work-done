@@ -1,0 +1,80 @@
+Variables and Constants
+Primitive and Reference
+Casting
+Numbers, Strings and Arrays
+Read Input
+Method Overloading
+**Primitive type special declarations**
+    int value = 203_567_789;
+    //Long value should end with 'l' or 'L' added to the number at the end
+    long longValue = 123551869L
+    double doubleValue = 7631891.9898
+    //float value should end with 'f' or 'F' added to the number at the end
+    float floatValue = 787.98F
+    boolean value = true / false
+
+**Reference types**
+    Stores complex data
+
+**Primitive vs Reference**
+    Reference types are copied by references
+    Primitive types are copied by their values
+    Ex: int a = 2;
+        int b = a;
+        a = 3;
+        print(b) //Output is 2 not 3
+
+        Point point1 = new Point(1,1);
+        Point point2 = point1;
+        point1.x = 3
+        print(point2) // Output is (3,1) not (1,1)
+
+**Strings**
+    -> strings are Reference types in Java
+    -> Syntax for Declaration of Strings 
+        String message = new String("Good morning");
+    -> However the above syntax is redundant. We can use a simple syntax
+        String message = "Good morning";
+    -> Task: Explore various methods in String object using . operator
+    -> Strings are immutable in Java
+    -> Even if we use .replace method it does not exactly replace the characters in the applied string.
+    It creates a copy
+
+**Escape sequences**
+
+**Arrays**
+
+**Multi-dimensional Arrays**
+
+**Constants**
+    'final' keyword is used to declare constants
+
+**Arithmetic Operations**
+    int x = 1;
+    int y = x++;
+    int z = ++x;
+    print(x,y,z) // Output is (3,1,2)
+
+**Casting**
+    -> Implicit casting and Explicit casting
+    -> Type casting the strings
+        - Integer.parseInt(str)
+        - Float.parseFloat(str)
+        - Double.parseDouble(str)
+
+**Math Class**
+    - Math.round
+    - Math.floor
+    - Math.ceil
+    - Math.random
+
+**Formatting Numbers**
+like numbers into currency, percentage, etc..(these are strings)
+
+**Reading Inputs**
+//Lets get syntax
+Scanner scanner = new Scanner(System.in); //for taking input from terminal
+System.out.print("Age:");
+byte age = scanner.nextByte()
+//we also have nextInt(), next(), nextLine(), ...
+system.out.println("Your age is " + age);
